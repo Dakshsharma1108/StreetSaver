@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { authRedirect } from '../utils/authRedirect.js';
 
 // Create axios instance with base configuration
 const api = axios.create({
@@ -51,7 +50,7 @@ api.interceptors.response.use(
       console.warn('Unauthorized access - redirecting to login');
       localStorage.removeItem('token');
       localStorage.removeItem('user');
-      authRedirect('/auth');
+      window.location.href = '/auth';
     } 
     else if (error.response?.status === 403) {
       // Handle forbidden access (wrong role)
