@@ -18,7 +18,7 @@ import Nearby from './pages/NearbyPage.jsx';
 
 function App() {
   return (
-    <Router>
+    <Router basename ='/StreetSaver'>
       <AuthProvider>
         <div className="min-h-screen">
           <Routes>
