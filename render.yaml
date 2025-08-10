@@ -2,7 +2,7 @@ services:
   - type: web
     name: streetsaver
     env: static
-    buildCommand: npm run build
+    buildCommand: chmod +x ./build.sh && ./build.sh
     staticPublishPath: ./dist
     routes:
       - type: rewrite

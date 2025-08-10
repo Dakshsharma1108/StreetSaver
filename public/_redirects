@@ -1,5 +1,1 @@
-# Redirect all routes to index.html for client-side routing
 /*    /index.html   200
-
-# Handle API routes separately if needed
-/api/*  /api/:splat  200
